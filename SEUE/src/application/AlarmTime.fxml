@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AlarmTimeController">
+	<children>
+		<AnchorPane layoutY="-14.0" prefHeight="550.0" prefWidth="600.0">
+			<children>
+				<GridPane layoutX="386.0" layoutY="446.0">
+					<columnConstraints>
+						<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+						<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+						<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+						<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+					</rowConstraints>
+					<children>
+						<Button mnemonicParsing="false" onMouseClicked="#showHomepage" text="zurück" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+					</children>
+				</GridPane>
+				<Label layoutX="167.0" layoutY="99.0" text="Zeitschema Alarm">
+					<font>
+						<Font size="36.0" />
+					</font>
+				</Label>
+			</children>
+		</AnchorPane>
+      <Label layoutX="24.0" layoutY="529.0" text="Verbindungsstatus: online" />
+      <GridPane layoutX="365.0" layoutY="214.0" prefHeight="142.0" prefWidth="103.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <CheckBox mnemonicParsing="false" text="Donnerstag" GridPane.rowIndex="4" />
+            <CheckBox mnemonicParsing="false" text="Mittwoch" GridPane.rowIndex="3" />
+            <CheckBox mnemonicParsing="false" text="Dienstag" GridPane.rowIndex="2" />
+            <CheckBox mnemonicParsing="false" text="Montag" GridPane.rowIndex="1" />
+            <CheckBox mnemonicParsing="false" text="Sonntag" GridPane.rowIndex="7" />
+            <CheckBox mnemonicParsing="false" text="Samstag" GridPane.rowIndex="6" />
+            <CheckBox mnemonicParsing="false" text="Freitag" GridPane.rowIndex="5" />
+            <Label text="Wochentag:" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="77.0" layoutY="213.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Name:" />
+            <Label text="Uhrzeit:" GridPane.rowIndex="1" />
+            <TextField GridPane.columnIndex="1" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+	</children>
+</AnchorPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserAdministrationController">
+	<children>
+		<AnchorPane layoutY="-14.0" prefHeight="550.0" prefWidth="600.0">
+			<children>
+				<Label layoutX="14.0" layoutY="42.0" prefHeight="53.0" prefWidth="318.0" text="Benutzerverwaltung">
+					<font>
+						<Font size="36.0" />
+					</font>
+				</Label>
+						<Button layoutX="475.0" layoutY="354.0" mnemonicParsing="false" onMouseClicked="#showHomepage" text="zurück" />
+            <GridPane layoutX="280.0" layoutY="155.0" prefHeight="107.0" prefWidth="228.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="25.0" prefWidth="77.0" text="Benutzername" />
+                  <Label prefHeight="25.0" prefWidth="51.0" text="Passwort" GridPane.rowIndex="1" />
+                  <Label text="Notfallnummer" GridPane.rowIndex="2" />
+                  <TextField prefHeight="25.0" prefWidth="118.0" GridPane.columnIndex="1" />
+                  <PasswordField prefHeight="25.0" prefWidth="118.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField prefHeight="25.0" prefWidth="118.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" text="erstellen" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane layoutX="88.0" layoutY="155.0">
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <ListView layoutX="38.0" layoutY="121.0" prefHeight="200.0" prefWidth="200.0" />
+            <AmbientLight color="CHARTREUSE" layoutX="272.0" layoutY="412.0" lightOn="true" />
+            <AmbientLight color="CHARTREUSE" layoutX="553.0" layoutY="61.0" lightOn="true" />
+            <GridPane layoutX="23.0" layoutY="367.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="55.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="145.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Rechte" />
+                  <Label text="Heizung" GridPane.rowIndex="1" />
+                  <Label text="Alarmanlae" GridPane.rowIndex="2" />
+                  <Label text="Licht" GridPane.rowIndex="3" />
+                  <RadioButton mnemonicParsing="false" text="on" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <RadioButton mnemonicParsing="false" text="on" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <RadioButton mnemonicParsing="false" text="on" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <RadioButton mnemonicParsing="false" text="off" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <RadioButton mnemonicParsing="false" text="off" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <RadioButton mnemonicParsing="false" text="off" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+			</children>
+		</AnchorPane>
+      <Label layoutX="25.0" layoutY="537.0" text="Verbindungsstatus: online" />
+	</children>
+</AnchorPane>
